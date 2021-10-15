@@ -1,0 +1,92 @@
+$btn-base-color:#D52856
+$white-font: #fff
+$dark-grey: #6e6e6e
+$img-banner-one: url("../img/homem-fazendo-flexao.jpg")
+$img-banner-two: url("../img/academia.jpg")
+$img-banner-three: url("../img/mulher-fazendo-ioga.jpg")
+
+.bg-grey-dark
+    background-color: $dark-grey
+    
+.logo-img
+    width: auto
+    height: 50px
+
+.link-color
+    color: $white-font !important
+
+@mixin btn-standard
+    border-radius: 5px
+    border: none
+    background-color: $btn-base-color
+    color: $white-font
+
+.btn-nav-search
+    @include btn-standard
+    padding: 5px 15px
+
+.btn-banner
+    @include btn-standard
+    padding: 10px 20px
+    text-decoration: none
+
+.btn-banner:hover
+    text-decoration: none
+    background-color: $btn-base-color
+    opacity: 0.85
+    color: white
+    
+@mixin img-banner
+    height: 450px
+    width: 100%
+    object-fit: fill
+    background-size: cover  
+    filter: brightness(60%)
+    
+.img-carousel-one
+    @include img-banner
+    
+    background-position: auto 20%
+    background-image: $img-banner-one
+
+.img-carousel-two
+    @include img-banner
+    background-position: center
+    background-image: $img-banner-two
+
+.img-carousel-three
+    @include img-banner
+    background-position: 100% 18%
+    background-image: $img-banner-three
+
+.img-cards
+    width: 140px
+    height: 140px
+    border-radius: 50%
+
+@mixin parallax-imagem
+    height: 200px
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    filter: brightness(40%)
+
+.paralax-primeiro
+    position: relative
+
+.parallax-bg-one
+    background-image: url("../img/trilha.jpg")
+    @include parallax-imagem
+
+
+.parallax-text
+    position: absolute
+    top: 40%
+    width: 100%
+    text-align: center
+    color: white !important
+
+@media ( max-width: 425px)
+    .parallax-text
+        top: 30%
