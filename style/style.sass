@@ -32,8 +32,7 @@ $img-banner-three: url("../img/mulher-fazendo-ioga.jpg")
 
 .btn-banner:hover
     text-decoration: none
-    background-color: $btn-base-color
-    opacity: 0.85
+    background-color: #B52249
     color: white
     
 @mixin img-banner
@@ -64,6 +63,15 @@ $img-banner-three: url("../img/mulher-fazendo-ioga.jpg")
     height: 140px
     border-radius: 50%
 
+.img-cards:hover
+    width: 200px
+    height: 200px
+
+.link-cards
+    color: #000
+    text-decoration: none
+
+
 @mixin parallax-imagem
     height: 200px
     background-attachment: fixed
@@ -72,13 +80,17 @@ $img-banner-three: url("../img/mulher-fazendo-ioga.jpg")
     background-size: cover
     filter: brightness(40%)
 
-.paralax-primeiro
+.paralax-position
     position: relative
 
 .parallax-bg-one
     background-image: url("../img/trilha.jpg")
     @include parallax-imagem
 
+.parallax-bg-two
+    background-image: url("../img/treino-praia.jpg")
+    @include parallax-imagem
+    
 
 .parallax-text
     position: absolute
@@ -90,3 +102,9 @@ $img-banner-three: url("../img/mulher-fazendo-ioga.jpg")
 @media ( max-width: 425px)
     .parallax-text
         top: 30%
+
+.footer-fit
+    background-color: $dark-grey
+    color: white 
+    a
+        text-decoration: none

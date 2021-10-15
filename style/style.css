@@ -30,8 +30,7 @@
 
 .btn-banner:hover {
   text-decoration: none;
-  background-color: #D52856;
-  opacity: 0.85;
+  background-color: #B52249;
   color: white;
 }
 
@@ -71,12 +70,32 @@
   border-radius: 50%;
 }
 
-.paralax-primeiro {
+.img-cards:hover {
+  width: 200px;
+  height: 200px;
+}
+
+.link-cards {
+  color: #000;
+  text-decoration: none;
+}
+
+.paralax-position {
   position: relative;
 }
 
 .parallax-bg-one {
   background-image: url("../img/trilha.jpg");
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(40%);
+}
+
+.parallax-bg-two {
+  background-image: url("../img/treino-praia.jpg");
   height: 200px;
   background-attachment: fixed;
   background-position: center;
@@ -97,6 +116,13 @@
   .parallax-text {
     top: 30%;
   }
+}
+.footer-fit {
+  background-color: #6e6e6e;
+  color: white;
+}
+.footer-fit a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
